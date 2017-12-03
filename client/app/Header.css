@@ -1,0 +1,43 @@
+/* CSS used here will be applied after bootstrap.css */
+html,body {
+    height:100%;
+    padding-top:70px;
+}
+
+section {
+    height:calc(90% - 50px);
+}
+
+.navbar
+{
+    background-image: url("img/7759b24dd414acb.jpg");
+    background-size: auto;
+}
+
+.affix {
+    padding:0px;
+    -webkit-transition:padding 0.2s linear;
+    -moz-transition:padding 0.2s linear;
+    -o-transition:padding 0.2s linear;
+    transition:padding 0.2s linear;
+
+}
+
+.affix-top {
+    padding-top:75px;
+    padding-bottom:15px;
+    -webkit-transition:padding 0.5s linear;
+    -moz-transition:padding 0.5s linear;
+    -o-transition:padding 0.5s linear;
+    transition:padding 0.5s linear;
+}
+
+#topDiv
+{
+    margin-top: -75px;
+}
+
+#searchZone
+{
+    margin-top: 7px;
+}

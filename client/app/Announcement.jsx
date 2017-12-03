@@ -1,31 +1,46 @@
 import React from 'react';
+import './Announcement.css';
+import PropTypes from 'prop-types';
 
 
+export default class Announcement extends React.Component {
 
-
-export default class MovieList extends React.Component {
+    static defaultProps = {
+        type : 'info'
+    };
+    static propTypes = {
+        title : PropTypes.string.isRequired,
+        detail    : PropTypes.string,
+        price : PropTypes.number,
+        distance : PropTypes.number
+    };
 
     render() {
         return (
-            <ul className="thumbnails list-unstyled">
-                <li className="col-md-12 row">
-                    <img src="img/avatar.jpg" className="col-md-2" />
-                    <div className="caption">
-                        <h3>AVATAR</h3>
-                        <p><b>Acteurs : </b>Bruce Willis, Bruce Willis & Bruce Willis</p>
-                        <p><b>Synopsis : </b>Il se passe des trucs dans ce film</p>
+            <div className="card">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="card-block">
+                            <h4 className="card-title">{this.props.title}</h4>
+                            <p className="card-text">{this.props.detail}</p>
+                            <div className="row lastLine">
+                                <div className="col-md-4">
+                                    <a href="#" className="btn btn-primary">Détail</a>
+                                </div>
+                                <div className="col-md-4" style={{padding: "5px"}}>
+                                    {this.props.price} euros
+                                </div>
+                                <div className="col-md-4" style={{padding: "5px"}}>
+                                    {this.props.distance} kilomètres
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </li>
-
-                <li className="col-md-12 row">
-                    <img src="img/rec.jpg" className="col-md-2" />
-                    <div className="caption">
-                        <h3>REC</h3>
-                        <p><b>Acteurs : </b>Des gens, et d'autres gens.</p>
-                        <p><b>Synopsis : </b>Il se passe aussi des trucs dans ce film</p>
+                    <div className="col-md-6">
+                        <div className="card-img-bottom" style={{background: "url('img/residentevil.jpg')" }}/>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         );
     }
 }

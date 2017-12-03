@@ -1,0 +1,32 @@
+.card-img-bottom {
+    color: #fff;
+    height: 20rem;
+    background: center no-repeat;
+    background-size: auto 100%;
+    border-radius: 22px;
+}
+
+.card-title
+{
+    font-size: 160%;
+    padding: 3%;
+}
+
+.card-text
+{
+    color: lightslategrey;
+    padding: 3%;
+}
+
+.card
+{
+    background-color: white;
+    margin: 5%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.lastLine
+{
+    padding-left: 3%;
+}
