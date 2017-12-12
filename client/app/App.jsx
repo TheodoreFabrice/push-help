@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 import 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
@@ -22,26 +23,27 @@ export default class App extends React.Component {
 
     render() {
         return (
+
             <div>
                 <Header/>
-<body>
-<div className="row">
-                <div className="card-deck col-md-6" >
-                    <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
-                    <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
-                    <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
-                    <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
-                    <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
+                <div className="container">
 
+
+                    <div className="row">
+                        <div className="card-columns col-md-10" >
+                            <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
+                            <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
+                            <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
+                            <Announcement title="Recherche garde enfant" detail="Urgent: recherche garde pour ce soir Sierck les bains" distance="50" price="150"></Announcement>
+
+                        </div>
+                        <div className="col-md-2" >
+                            colonne de droite
+                        </div>
+                    </div>
                 </div>
-    <div className="col-md-6" >
-        colonne de droite
-    </div>
-
-
-</div>
-</body>
             </div>
+
         );
     }
 }

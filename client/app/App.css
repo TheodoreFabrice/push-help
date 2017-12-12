@@ -1,24 +1,8 @@
-header {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 15px;
-}
 
-.thumbnails li {
-  margin-bottom: 15px;
-}
-
-.caption h3 {
-  margin-top: 0px;
-}
-
-.card-deck
-{
-
-}
 
 body
 {
-  background-color: gray;
+  background-color: lightblue ;
 }
 
 
